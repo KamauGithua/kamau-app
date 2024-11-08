@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/navbar/Navbar';
 import Banner from './components/banner/banner';
+import Features from './components/features/Feature';
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <div className="max-w-screen-xl mx-auto">
         <Banner />
+        <Features />
       </div>
     </div>
   );
