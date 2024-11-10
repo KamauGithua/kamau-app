@@ -4,7 +4,7 @@ import Media from './Media';
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
-      words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
+      words: ["Professional Coder.", "Full Stack Developer.", "UI Designer.", "Aircraft Maintenance Technician."],
       loop: true,
       typeSpeed: 20,
       deleteSpeed: 10,
@@ -26,11 +26,32 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I use animation as a third dimension by which to simplify experiences
-          and kuiding thro each and every interaction. I'm not adding motion
-          just to spruce things up, but doing it in ways that.
+        Hello! I’m a Fullstack Developer with a diverse background in Aeronautical Engineering and a passion for creating impactful software solutions. After graduating with a degree in Aeronautical Engineering and completing a Diploma in Fullstack Development, I embarked on a journey to bridge my technical knowledge with the digital realm. I specialize in building dynamic, user-centered applications and have experience with modern web and mobile development frameworks, including React, Vue.js, Laravel, and Android development with Kotlin and Jetpack Compose. My goal is to leverage my engineering insights and software skills to drive innovative solutions, particularly in industries like aeronautics and IT, where technology can transform complex systems into user-friendly experiences.
         </p>
+         {/* Buttons */}
+         <div className="flex gap-5">
+                <button className="px-6 py-3 bg-designColor text-white font-bold rounded-lg hover:bg-opacity-90 transition duration-300">
+                    Download Resume
+                </button>
+                <button className="px-6 py-3 bg-transparent border-2 border-designColor text-designColor font-bold rounded-lg hover:bg-designColor hover:text-white transition duration-300">
+                    Hire Me
+                </button>
+            </div>
       </div>
+
+       {/* Buttons */}
+       {/* <div className="flex gap-5">
+                <button className="px-6 py-3 bg-designColor text-white font-bold rounded-lg hover:bg-opacity-90 transition duration-300">
+                    Download CV
+                </button>
+                <button className="px-6 py-3 bg-transparent border-2 border-designColor text-designColor font-bold rounded-lg hover:bg-designColor hover:text-white transition duration-300">
+                    Hire Me
+                </button>
+            </div> */}
+
+
+
+
      {/* Media */}
      <Media />
     </div>

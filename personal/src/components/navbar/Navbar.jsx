@@ -47,9 +47,7 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                Hello! I’m a Fullstack Developer with a diverse background in Aeronautical Engineering and a passion for creating impactful software solutions. After graduating with a degree in Aeronautical Engineering and completing a Diploma in Fullstack Development, I embarked on a journey to bridge my technical knowledge with the digital realm. I specialize in building dynamic, user-centered applications and have experience with modern web and mobile development frameworks, including React, Vue.js, Laravel, and Android development with Kotlin and Jetpack Compose.My goal is to leverage my engineering insights and software skills to drive innovative solutions, particularly in industries like aeronautics and IT, where technology can transform complex systems into user-friendly experiences.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
