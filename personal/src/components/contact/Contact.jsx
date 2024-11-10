@@ -1,4 +1,5 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
+import emailjs from 'emailjs-com';
 import Title from '../layouts/Title';
 import ContactLeft from './ContactLeft';
 
@@ -11,6 +12,11 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
+
+   // Initialize EmailJS when the component mounts
+   useEffect(() => {
+    emailjs.init("UI21QUSmAfuF1aiv4"); 
+  }, []);
 
   // ========== Email Validation start here ==============
   const emailValidation = () => {
@@ -45,6 +51,44 @@ const Contact = () => {
       setSubject("");
       setMessage("");
     }
+
+
+    // Prepare form data for EmailJS
+    const formData = {
+        username,
+        phoneNumber,
+        email,
+        subject,
+        message,
+      };
+  
+      // Sending the form using EmailJS
+      emailjs
+        .send(
+          import.meta.env.VITE_EMAIL_SERVICE_ID,
+          import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+          formData,
+          import.meta.env.VITE_EMAIL_USER_ID
+        )
+        .then(
+          (result) => {
+            setSuccessMsg(`Thank you, ${username}, your message has been sent successfully!`);
+            setErrMsg('');
+            // Clear form fields
+            setUsername('');
+            setPhoneNumber('');
+            setEmail('');
+            setSubject('');
+            setMessage('');
+          },
+          (error) => {
+            setErrMsg('Failed to send the message. Please try again later.');
+            console.error('Error sending email:', error);
+          }
+        );
+
+
+
   };
   return (
     <section
@@ -58,7 +102,7 @@ const Contact = () => {
         <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
           <ContactLeft />
           <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne">
-            <form className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
+            <form className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5" onSubmit={handleSend}>
               {errMsg && (
                 <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
                   {errMsg}
@@ -143,7 +187,8 @@ const Contact = () => {
               </div>
               <div className="w-full">
                 <button
-                  onClick={handleSend}
+                //   onClick={handleSend}
+                type='submit'
                   className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
                 >
                   Send Message

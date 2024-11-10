@@ -6,6 +6,8 @@ import Projects from './components/projects/Projects';
 import Testimonial from './components/testimonial/Testimonial';
 import Contact from './components/contact/Contact';
 import Resume from './components/resume/Resume';
+import Footer from './components/footer/Footer';
+import FooterBottom from './components/footer/FooterBottom';
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
         <Resume />
         <Testimonial />
         <Contact />
+        <Footer />
+        <FooterBottom />
       </div>
     </div>
   );
