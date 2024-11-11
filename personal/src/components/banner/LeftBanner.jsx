@@ -33,21 +33,15 @@ const LeftBanner = () => {
                 <button className="px-6 py-3 bg-designColor text-white font-bold rounded-lg hover:bg-opacity-90 transition duration-300">
                     Download Resume
                 </button>
-                <button className="px-6 py-3 bg-transparent border-2 border-designColor text-designColor font-bold rounded-lg hover:bg-designColor hover:text-white transition duration-300">
-                    Hire Me
-                </button>
+                <a href="mailto:githuakamau99@gmail.com?subject=Job Opportunity - Hire Me">
+  <button className="px-6 py-3 bg-transparent border-2 border-designColor text-designColor font-bold rounded-lg hover:bg-designColor hover:text-white transition duration-300">
+    Hire Me
+  </button>
+</a>
+                
             </div>
       </div>
 
-       {/* Buttons */}
-       {/* <div className="flex gap-5">
-                <button className="px-6 py-3 bg-designColor text-white font-bold rounded-lg hover:bg-opacity-90 transition duration-300">
-                    Download CV
-                </button>
-                <button className="px-6 py-3 bg-transparent border-2 border-designColor text-designColor font-bold rounded-lg hover:bg-designColor hover:text-white transition duration-300">
-                    Hire Me
-                </button>
-            </div> */}
 
 
 

@@ -14,9 +14,12 @@ const Footer = () => {
               <span className="bannerIcon">
                 <FaTwitter />
               </span>
-              <span className="bannerIcon">
-                <FaLinkedinIn />
-              </span>
+              
+              <a href="https://www.linkedin.com/in/simon-kamau-1214b2276" target="_blank"     rel="noopener noreferrer">
+                   <span className="bannerIcon" >
+                     <FaLinkedinIn href="https://www.linkedin.com/in/simon-kamau-1214b2276" />
+                   </span>
+              </a>
             </div>
           </div>
           <div className="w-full h-full">

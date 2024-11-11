@@ -12,56 +12,57 @@ const Education = () => {
           {/* part one */}
           <div>
             <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-              <p className="text-sm text-designColor tracking-[4px]">1998 - 2010</p>
+              <p className="text-sm text-designColor tracking-[4px]">2014 - 2024</p>
               <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
             </div>
             <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
               <ResumeCard
-                title="BSc in Computer Science"
-                subTitle="University of DVI (2006 - 2010)"
-                result="3.90/4"
-                des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+                title="Diploma in FullStack Development"
+                subTitle="Institute of Software Technologies (2023-2024)"
+                result="Merit"
+                des="Learned software development methodologies, coding languages, and application development. Worked on various projects utilizing modern technologies and frameworks."
               />
-              <ResumeCard
-                title="AS - Science & Information"
-                subTitle="SuperKing College (2001 - 2005)"
-                result="4.75/5"
-                des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
-              />
+               <ResumeCard
+              title="Diploma in Aeronautical Engineering (Airframes & Engines)"
+              subTitle="East African School of Aviation (2019-2022)"
+              result="Distinction"
+              des="Specialized in the maintenance, repair, and overhaul of aircraft airframes and engines. Gained hands-on experience with various aircraft systems and components."
+            />
               <ResumeCard
                 title="Secondary School Education"
-                subTitle="Kingstar Secondary School (1998 - 2000)"
-                result="5.00/5"
+                subTitle="Kangaru School (2014 - 2017)"
+                result="merit"
                 des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
               />
+
             </div>
           </div>
           {/* part Two */}
     
           <div>
             <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-              <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
+              <p className="text-sm text-designColor tracking-[4px]">2021 - 2024</p>
               <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
             </div>
             <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+            <ResumeCard
+              title="Software Developer"
+              subTitle="REMOTE"
+              result="Jan 2024 - Present"
+              des="Developed and maintained web applications using MERN stack. Collaborated with cross-functional teams to design and implement new features. Improved application performance and scalability, contributing to enhanced user experience and operational efficiency."
+            />
+                <ResumeCard
+              title="Aircraft Maintenance Technician"
+              subTitle="NATIONAL AIR SUPPORT DEPARTMENT (Nairobi)"
+              result="16/01/2023 - 14/04/2023"
+              des="Completed scheduled maintenance checks of different aircraft and their engines, which included, Cessna; C- 152, C-172, C-180, C-182, C-206, C-208, Husky, Bell 206 L-4,Bell 407 Euro copter AS350 and Robinson R-44 helicopter to comply with aviation laws and regulations."
+            />
               <ResumeCard
-                title="Sr. Software Engineer"
-                subTitle="Google Out Tech - (2017 - Present)"
-                result="USA"
-                des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
-              />
-              <ResumeCard
-                title="Web Developer & Trainer"
-                subTitle="Apple Developer Team - (2012 - 2016)"
-                result="MALAYSIA"
-                des="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
-              />
-              <ResumeCard
-                title="Front-end Developer"
-                subTitle="Nike - (2020 - 2011)"
-                result="Oman"
-                des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
-              />
+              title="Airworthiness Intern"
+              subTitle="KENYA CIVIL AVIATION AUTHORITY (Nairobi) "
+              result="15/02/2021 - 14/05/2021"
+              des=" Conducting inspections on aircraft, and training facilities for certification and approval purposes and preparing detailed reports on finding of such activities. Guiding industry and promoting compliance with Airworthiness regulations and associated publications."
+            />
             </div>
           </div>
         </motion.div>
